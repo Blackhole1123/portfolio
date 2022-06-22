@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rishaan Desai - Blog</title>
+  </head>
+  <body>
+    <!-- i is formatted like:
+    {"name": "SPACs Explained", "url": "/blog/spacs-explained", "date": "6/19/2022", "summary": "Learn all about Special Purpose Aquisition Companies (SPACs)"}
+    -->
+    {% for i in posts %}
+    <h2><a href="{{ i.url }}">{{ i.name }}</a></h2>
+      <h3>{{ i.summary }} <br/>
+      {{ i.date }}
+      </h3>
+      <br/>
+    {% endfor %}
+  </body>
+</html>

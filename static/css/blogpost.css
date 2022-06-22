@@ -1,0 +1,4 @@
+/* article <p> tags should have line-height of 10 */
+article p {
+    line-height: 150%;
+}
