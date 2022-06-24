@@ -1,4 +1,19 @@
-/* article <p> tags should have line-height of 10 */
-article p {
-    line-height: 150%;
+/* section <p> tags should have line-height of 10 */
+p {
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
 }
+
+body {
+  font-family: 'Merriweather', serif;
+}
+
+::selection {
+  color: black;
+  background: yellow;
+}
+

@@ -1,0 +1,21 @@
+body {
+    background-color: #121212;
+    font-family: 'Roboto', sans-serif;
+}
+
+.box {
+    color: white;
+    text-align: center;
+    background-color: #121212;
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    border: 3px solid #121212;
+}
+
+/* box hover */
+.box:hover {
+    border: 3px solid #d6dde0;
+}
+

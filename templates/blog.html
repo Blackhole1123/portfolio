@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="/static/css/blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <title>Rishaan Desai - Blog</title>
   </head>
+    <style>
+      body {
+        background: whitesmoke;
+      }
+      .box {
+        width: 500px;
+        height: fit-content;
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0px 0px 5px ghostwhite;
+      }
+
+      .center-text {
+        text-align: center;
+      }
+  </style>
   <body>
-    <!-- i is formatted like:
-    {"name": "SPACs Explained", "url": "/blog/spacs-explained", "date": "6/19/2022", "summary": "Learn all about Special Purpose Aquisition Companies (SPACs)"}
-    -->
+    <h2 class='center-text'><u>Recent Posts</u></h2>
     {% for i in posts %}
+    <div class="box" style="margin:0 auto;" onclick="window.location.href='{{i.url}}'">
     <h2><a href="{{ i.url }}">{{ i.name }}</a></h2>
       <h3>{{ i.summary }} <br/>
       {{ i.date }}
+      <br/>
       </h3>
       <br/>
+    </div>
+    <br/>
     {% endfor %}
   </body>
 </html>

@@ -16,7 +16,8 @@ def recent_posts():
     o.close()
     posts = [json.loads(post) for post in posts]
     posts.reverse()
-    return posts
+    print(posts[:5])
+    return posts[:5]
 
 @blog.route("/")
 def blog_home():

@@ -4,7 +4,7 @@ class Header extends HTMLElement{
   }
   connectedCallback(){
     this.innerHTML = `
-<p>™ and © 2022, Rishaan Desai</p>
+<p style="text-align:center;">™ and © 2022, Rishaan Desai</p>
     `
   }
 }

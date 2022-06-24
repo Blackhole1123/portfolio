@@ -10,4 +10,4 @@ def index():
 #initialize the blueprint
 app.register_blueprint(blog.blog, url_prefix='/blog')
 
-app.run(debug=True)
+app.run(host='0.0.0.0', port='8080', debug=True)

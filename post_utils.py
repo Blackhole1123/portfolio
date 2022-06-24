@@ -1,11 +1,12 @@
 import json
 
-def add_post(name, url, date, summary):
+def add_post(name, url, date, summary, categories):
     post = {
         "name": name,
         "url": url,
         "date": date,
-        "summary": summary
+        "summary": summary,
+        "categories" : categories
     }
     post = json.dumps(post)
     with open("posts.json", "a") as f:
