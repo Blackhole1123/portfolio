@@ -1,0 +1,190 @@
+/* button */
+
+button {
+    background-color: #121212;
+    border: none;
+    border-radius: 6.5px;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+button:hover {
+    opacity: 0.8;
+    transition: opacity 0.4s;
+}
+
+/* anchor */
+a {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #121212;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* headers */
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #121212;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #121212;
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #121212;
+}
+
+h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #121212;
+}
+
+h5 {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #121212;
+}
+
+/* paragraph */
+p {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #121212;
+}
+
+/* custom colors */
+.dark {
+    color: #121212;
+}
+
+.light {
+    color: #f2e2e9;
+}
+
+/* lists */
+
+li {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #121212;
+}
+
+/* table */
+table {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #121212;
+}
+
+/* media */
+img {
+    border-radius: 5px;
+}
+
+video {
+    border-radius: 5px;
+}
+
+/* inputs */
+
+/* text */
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 6.5px;
+    background-color: #f2e2e9;
+    color: #121212;
+    font-size: 16px;
+}
+
+input[type=text]:focus {
+    background-color: #f2e2e9;
+    outline: none;
+    color: #121212;
+}
+
+/* password */
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 6.5px;
+    background-color: #f2e2e9;
+    color: #121212;
+    font-size: 16px;
+    input-security: disc;
+
+}
+
+input[type=password]:focus {
+    background-color: #f2e2e9;
+    outline: none;
+    color: #121212;
+}
+
+/* textarea */
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 6.5px;
+    background-color: #f2e2e9;
+    color: #121212;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+textarea:focus {
+    background-color: #f2e2e9;
+    outline: none;
+    color: #121212;
+    font-family: "Roboto", sans-serif;
+}
+
+/* select */
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 6.5px;
+    background-color: #f2e2e9;
+    color: #121212;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+.center {
+    text-align: center;
+}
