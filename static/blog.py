@@ -25,6 +25,11 @@ def blog_home():
 
 @blog.route("/post/<name>")
 def post(name):
+    #if the name is not in the posts.json file, abort
+    o = open("posts.json", "r")
+    posts = o.readlines()
+    o.close()
+    print(posts)
     return render_template(f"blogposts/{name}.html")
 
 @blog.route("/api/<name>")
@@ -52,5 +57,5 @@ def category(category):
     posts = [post for post in posts if category in post["categories"]]
     posts.reverse()
     if len(posts) == 0:
-        return render_template("error.html", message="No posts found")
+        return render_template("blog-error.html", message="No posts found")
     return render_template("blog.html", posts=posts)

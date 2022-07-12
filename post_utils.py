@@ -13,5 +13,3 @@ def add_post(name, url, date, summary, categories):
         f.write(post)
         f.write("\n")
     print("Post added")
-
-add_post("Test", "test", "12/24/2048", "Test")
