@@ -9,6 +9,11 @@ app.secret_key = '(1yHf(#e4P$*_#MK'
 def index():
     return render_template('index.html')
 
+#sitemap
+@app.route('/sitemap.xml')
+def sitemap():
+    return render_template('sitemap.xml')
+
 #initialize the blueprint
 app.register_blueprint(blog.blog, url_prefix='/blog')
 app.register_blueprint(errors.errors)

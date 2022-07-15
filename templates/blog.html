@@ -17,7 +17,6 @@
         {{ i.date }}
         <h4>Categories: 
         {% for j in i.categories %}
-        <!-- do <a href="/blog/category/{{ j }}">{{ j }}</a>, but there should not be a comma for the last one-->
         <a href="/blog/category/{{ j }}">{{ j }}</a>{{ ", " if not loop.last else "" }}
         {% endfor %}
         </h4>
