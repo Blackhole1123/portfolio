@@ -8,43 +8,6 @@
     <meta charset="utf-8">
     <title>Rishaan Desai - Blog</title>
   </head>
-    <style>
-      body {
-        background: whitesmoke;
-      }
-
-      a {
-        color: black;
-      }
-
-      .box {
-        width: 500px;
-        height: fit-content;
-        background-color: white;
-        border-radius: 10px;
-        padding: 20px;
-        box-shadow: 0px 0px 5px ghostwhite;
-      }
-
-      .center-text {
-        text-align: center;
-      }
-
-      button {
-        background-color: #121212;
-        border: none;
-        border-radius: 6.5px;
-        color: white;
-        padding: 15px 20px;
-        text-align: center;
-        font-size: 16px;
-      }
-
-    button:hover {
-      opacity: 0.8;
-      transition: opacity 0.4s;
-    }
-  </style>
   <body>
     <h2 class='center-text'><a href="/blog">Recent Posts</a></h2>
     {% for i in posts %}
@@ -54,7 +17,8 @@
         {{ i.date }}
         <h4>Categories: 
         {% for j in i.categories %}
-        <a href="/blog/category/{{ j }}">{{ j }}</a>,
+        <!-- do <a href="/blog/category/{{ j }}">{{ j }}</a>, but there should not be a comma for the last one-->
+        <a href="/blog/category/{{ j }}">{{ j }}</a>{{ ", " if not loop.last else "" }}
         {% endfor %}
         </h4>
       <br/>
