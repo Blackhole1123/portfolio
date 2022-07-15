@@ -53,8 +53,20 @@ transition: opacity 0.4s;
 
 /* mobile */
 @media screen and (max-width: 600px) {
+  /* zoom everything */
+  body {
+    font-size: 1.5em;
+  }
   .box {
     width: 300px;
-    height: 10px;
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    border: 3px solid #121212;
+  }
+  /* box hover */
+  .box:hover {
+    border: 3px solid #d6dde0;
   }
 }
