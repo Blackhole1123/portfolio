@@ -8,8 +8,13 @@ p {
     margin-left: 80px;
 }
 
+@font-face {
+  font-family: JetBrainsMono;
+  src: url(../JetBrainsMono-Regular.ttf);
+}
+
 body {
-  font-family: 'Merriweather', serif;
+  font-family: 'JetBrainsMono', serif;
 }
 
 ::selection {
