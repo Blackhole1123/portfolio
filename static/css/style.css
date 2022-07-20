@@ -1,3 +1,8 @@
+@font-face {
+    font-family: JetBrainsMono;
+    src: url(../JetBrainsMono-Regular.ttf);
+  }
+
 body {
     background-color: #121212;
     font-family: 'Roboto', sans-serif;
