@@ -1,6 +1,6 @@
 from flask import Blueprint, flash, g, redirect, render_template, request, url_for
 from werkzeug.exceptions import abort
-import json
+import json, os
 
 blog = Blueprint(
     "blog",
@@ -25,11 +25,10 @@ def blog_home():
 
 @blog.route("/post/<name>")
 def post(name):
-    #if the name is not in the posts.json file, abort
-    o = open("posts.json", "r")
-    posts = o.readlines()
-    o.close()
-    print(posts)
+    fn = f'{name}.html'
+    # if fn is not in the folder templates/blogposts, abort
+    if fn not in os.listdir("./templates/blogposts"):
+        return render_template('blog-error.html', error="Post not found")
     return render_template(f"blogposts/{name}.html")
 
 @blog.route("/api/<name>")
