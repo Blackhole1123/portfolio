@@ -13,8 +13,14 @@ p {
   src: url(../JetBrainsMono-Regular.ttf);
 }
 
+a {
+  color: white;
+}
+
 body {
   font-family: 'JetBrainsMono', serif;
+  background: linear-gradient(to right, #0a1121, #1e2a3b);
+  color: white;
 }
 
 ::selection {

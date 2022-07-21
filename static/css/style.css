@@ -2,11 +2,23 @@
     font-family: JetBrainsMono;
     src: url(../JetBrainsMono-Regular.ttf);
   }
+  
+.whitebutton {
+  background-color: #121212;
+  border: none;
+  border-radius: 6.5px;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 16px;
+}
 
 body {
-    background-color: #121212;
-    font-family: 'Roboto', sans-serif;
-}
+    font-family: 'JetBrainsMono', serif;
+    background: linear-gradient(to right, #0a1121, #1e2a3b);
+    color: white;
+  }
+
 
 .box {
     color: white;
