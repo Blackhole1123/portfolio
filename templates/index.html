@@ -1,7 +1,19 @@
 <link href="/static/css/style.css" rel="stylesheet"></link>
 <title>Home - Rishaan Desai</title>
 <link rel="icon" type="image/x-icon" href="/static/images/R.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+  button {
+  background-color: white;
+  border: none;
+  border-radius: 6.5px;
+  color: #121212;
+  padding: 13px 25px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .wrapper {
   height: 100vh;
   /*This part is important for centering*/
@@ -26,9 +38,17 @@ icon {
   margin: 10px;
   border-radius: 10px;
 }
+
+h3 {
+  margin: 10%;
+}
+
+.center-horizontally {
+  display: flex;
+  justify-content: center;
+}
 </style>
 
 <div class="wrapper">
-      <h3>Hi! Thanks for visiting! I'm still building my website, so check back soon to see what I've been up to! In the meantime, check out <a href="/blog">my blog!</a></h3>
+      <h3 style="text-align:center;">Hi! Thanks for visiting! I'm still building my website, so check back soon to see what I've been up to! In the meantime, check out <a href="/blog">my blog</a>. <br/><br/><button onclick="window.location='/blog'">Go to Blog</a></h3>
 </div>
-<button class="whitebutton" onclick="window.location.href='/blog'">Go to Blog</button>
